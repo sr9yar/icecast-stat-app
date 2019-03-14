@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && node index.js",
+    "prestart": "npm install",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,11 @@
   },
   "homepage": "https://github.com/sr9yar/icecast-stat-app#readme",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "hapi": "^18.1.0",
     "icecast-monitor": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
