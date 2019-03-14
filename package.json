@@ -1,0 +1,24 @@
+{
+  "name": "icecast-stat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sr9yar/icecast-stat-app.git"
+  },
+  "author": "sr9yar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sr9yar/icecast-stat-app/issues"
+  },
+  "homepage": "https://github.com/sr9yar/icecast-stat-app#readme",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "icecast-monitor": "^1.0.2"
+  }
+}
