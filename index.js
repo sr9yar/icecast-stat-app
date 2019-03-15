@@ -19,6 +19,34 @@ const server=Hapi.server({
     port: process.env.PORT || '8000'
 });
 
+
+
+// create icecast feed
+monitor.createFeed(function(err, feed) {
+    if (err) throw err;
+    
+    // Handle wildcard events
+    feed.on('*', function(event, data, raw) {
+      console.log(event, data, raw);
+    });
+  
+    // Handle usual events
+    feed.on('mount.listeners', function(listeners, raw) {
+      console.log(listeners, raw);
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
 // Main route
 server.route({
     method:'GET',
